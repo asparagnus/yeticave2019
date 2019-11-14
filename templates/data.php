@@ -1,7 +1,37 @@
 <?php
 $is_auth = rand(0, 1);
 
-$categories = ['Доски и лыжи', 'Крепления', 'Ботинки', 'Одежда', 'Инструменты', 'Разное'];
+$categories = [
+    ['name' => 'Доски и лыжи',
+    'imgurl' => 'img/category-1.jpg',
+    'url' => '#',
+],
+
+['name' => 'Крепления',
+    'imgurl' => 'img/category-2.jpg',
+    'url' => '#',
+],
+
+['name' => 'Ботинки',
+    'imgurl' => 'img/category-3.jpg',
+    'url' => '#',
+],
+
+['name' => 'Одежда',
+    'imgurl' => 'img/category-4.jpg',
+    'url' => '#',
+],
+
+['name' => 'Инструменты',
+    'imgurl' => 'img/category-5.jpg',
+    'url' => '#',
+],
+
+['name' => 'Разное',
+    'imgurl' => 'img/category-6.jpg',
+    'url' => '#',
+]
+];
 
 $cards = [
 [

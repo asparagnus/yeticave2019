@@ -1,6 +1,6 @@
 <ul class="lots__list">
             <!--заполните этот список из массива с товарами-->
-            <?php foreach($cards as $card): ?>
+        
             <li class="lots__item lot">
                 <div class="lot__image">
                     <img src="<?= $card['url'];?>" width="350" height="260" alt="<?= esc($card['name']);?>">
@@ -20,5 +20,5 @@
                     </div>
                 </div>
             </li>
-        <?php endforeach; ?>
+
         </ul>

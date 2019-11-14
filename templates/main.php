@@ -9,7 +9,7 @@
             $num = count ($categories);
             while($index < $num): ?>
             <li class="promo__item promo__item--boards">
-                <a class="promo__link" href="pages/all-lots.html"><?= esc($categories[$index]); ?></a>
+                <a class="promo__link" href="pages/all-lots.html"><?= esc($categories[$index]['name']); ?></a>
             </li>
             <?php $index++; ?>
             <?php endwhile; ?>
@@ -23,7 +23,7 @@
 
         <?php 
         foreach($cards as $card): ?>
-			<?=include_template('_lots.php', ['card' => $card]); ?>
+			<?=include_template('lots.php', ['card' => $card]); ?>
 		<?php endforeach; ?>  
 
     </section>

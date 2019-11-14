@@ -39,7 +39,7 @@ function include_template($name, $data) {
 
 // ПРОВЕРКА ВРЕДОНОСНОГО КОДА
 function esc($str) { 
-	$text = strip_tags($str); // или так $text = htmlspecialchars($str);
+	$text = htmlspecialchars($str); // или так $text = strip_tags($str);
 	return $text;
 }
 
