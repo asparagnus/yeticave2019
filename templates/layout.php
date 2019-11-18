@@ -62,7 +62,7 @@
             $index = 0;
             $num = count($categories);
             while($index < $num): ?>
-                <a href="pages/all-lots.html"><?=$categories[$index]; ?></a>
+                <a href="pages/all-lots.html"><?=$categories[$index]['name']; ?></a>
                 <?php $index++; ?>
         <?php endwhile; ?>
             </li>
